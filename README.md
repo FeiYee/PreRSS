@@ -2,8 +2,6 @@
 
 Official implementation accompanying the *Vehicles* article:
 
-> Jianing Zhi, Zidong Chen, and Xinghua Li.
->
 > **Recoverable Service Shortfall-Driven Dispatch for Fixed-Mobile Charging Coordination: Exponential Deadline-Viability Flow on Real Transaction Event Streams.**
 
 This repository implements recoverable service shortfall (RSS) construction and
