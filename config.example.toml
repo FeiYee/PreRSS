@@ -1,0 +1,5 @@
+[paths]
+jiaxing_parquet = "./data/jiaxing/jiaxing_transactions_clean.parquet"
+jiaxing_event = "./data/jiaxing/run_jiaxing_event_dispatch.py"
+urbanev_root = "./data/urbanev"
+output_root = "./outputs"

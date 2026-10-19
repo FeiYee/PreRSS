@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vehicles-edvf"
+version = "0.2.0"
+description = "Vehicles companion: RSS-driven EDVF for fixed-mobile charging coordination."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Jianing Zhi" },
+  { name = "Zidong Chen" },
+  { name = "Xinghua Li" },
+]
+dependencies = [
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "pandas>=2.0",
+  "matplotlib>=3.7",
+  "pyarrow>=12.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["edvf_rss*"]

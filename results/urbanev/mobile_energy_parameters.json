@@ -1,0 +1,81 @@
+{
+  "capacity_grid_kWh": [
+    200.0,
+    400.0,
+    600.0
+  ],
+  "capacity_rationale": "approximately aligned with commercially published 203.5, 407, and 610.6 kWh mobile BESS charger classes",
+  "recharge_power_grid_kW": [
+    80.0,
+    150.0,
+    280.0
+  ],
+  "slot_minutes": 30,
+  "existing_service_cap_kWh_per_unit_slot": 20.0,
+  "existing_service_cap_equivalent_kW": 40.0,
+  "initial_soc_fraction": 1.0,
+  "min_soc_fraction": 0.05,
+  "round_trip_efficiency": 0.9,
+  "travel_energy_sensitivity_kWh_per_km": [
+    0.0,
+    0.3
+  ],
+  "acn_60min_pseudo_interrupt": {
+    "n": 9408,
+    "actual_future_energy_kWh_quantiles": {
+      "0.1": 0.0,
+      "0.25": 0.38017493605249997,
+      "0.5": 2.8277388888849995,
+      "0.75": 7.5849057777325,
+      "0.9": 13.529647295982013,
+      "0.95": 21.806956624983986
+    },
+    "requested_remaining_kWh_quantiles": {
+      "0.1": 4.561045305553,
+      "0.25": 5.915004374975,
+      "0.5": 11.979051666665,
+      "0.75": 22.2858077777775,
+      "0.9": 34.39065593800902,
+      "0.95": 53.170659708331996
+    }
+  },
+  "epfl": {
+    "n": 1835,
+    "pmax_kW_quantiles": {
+      "0.1": 53.2632,
+      "0.25": 66.111,
+      "0.5": 98.397,
+      "0.75": 145.2,
+      "0.9": 160.2618,
+      "0.95": 165.5964
+    },
+    "requested_peak_kW_quantiles": {
+      "0.1": 92.595,
+      "0.25": 137.406,
+      "0.5": 191.382,
+      "0.75": 352.23,
+      "0.9": 353.265,
+      "0.95": 353.265
+    }
+  },
+  "commercial_reference": [
+    {
+      "capacity_kWh": 203.5,
+      "dc_output_kW": 150,
+      "ac_input_kW": 80,
+      "source": "https://www.mpmc-group.com/mobile-bess-charger-series"
+    },
+    {
+      "capacity_kWh": 407.0,
+      "dc_output_kW": 400,
+      "ac_input_kW": 280,
+      "source": "https://www.mpmc-group.com/blog/high-capacity-mobile-bess-chargers-from-china"
+    },
+    {
+      "capacity_kWh": 610.6,
+      "dc_output_kW": 600,
+      "ac_input_kW": 280,
+      "source": "https://www.mpmc-group.com/blog/high-capacity-mobile-bess-chargers-from-china"
+    }
+  ]
+}

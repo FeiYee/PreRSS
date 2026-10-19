@@ -1,0 +1,18 @@
+{
+  "rows": 540,
+  "topologies": [
+    "compact_real",
+    "random_real",
+    "dispersed_real"
+  ],
+  "settings": [
+    "Unlimited",
+    "B200_no_recharge",
+    "B200_R150",
+    "B400_no_recharge",
+    "B400_R150",
+    "B600_R150"
+  ],
+  "evaluation_days_each_cell": 30,
+  "finite_energy_conservation_max_error": 1.3642420526593924e-12
+}

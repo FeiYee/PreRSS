@@ -1,0 +1,72 @@
+{
+  "source": {
+    "title": "A high-resolution electric vehicle charging transaction dataset with multidimensional features in China",
+    "article_doi": "10.1038/s41597-025-04982-1",
+    "dataset_doi": "10.6084/m9.figshare.28182251.v3",
+    "raw_path": "\\\\DESKTOP-SJJNFI7\\research\\doctor_xiao_new\\external_data\\jiaxing_ev_transactions_v3\\dataset\\Dataset\\Charging_Data.csv",
+    "raw_sha256": "6f3643db401327ec4f4a074109987706e421896869acac26a8ee1a5c6e3b45ee"
+  },
+  "records": {
+    "transactions": 441077,
+    "stations": 13,
+    "charging_posts": 92,
+    "districts": 3,
+    "start_min": "2019-12-31T21:27:03",
+    "start_max": "2021-12-31T23:52:14",
+    "train_transactions": 285227,
+    "test_transactions": 155850
+  },
+  "cause_counts": {
+    "full_charge": 203201,
+    "user_stop": 155942,
+    "nonsystem_pile_fault": 41278,
+    "ev_fault": 20365,
+    "other_pile_fault": 20114,
+    "system_issue": 177
+  },
+  "energy_model": {
+    "global_full_charge_median_kwh": 19.53,
+    "full_charge_training_sessions": 131420,
+    "station_prior_strength": 100.0,
+    "cell_prior_strength": 40.0
+  },
+  "probability_model": {
+    "global_cause_probability": {
+      "full_charge": 0.4607558190493887,
+      "user_stop": 0.3575292661634418,
+      "nonsystem_pile_fault": 0.0937604083764861,
+      "system_issue": 0.0005013550610566321,
+      "ev_fault": 0.043074463497494976,
+      "other_pile_fault": 0.04437868785213181
+    },
+    "station_prior_strength": 100.0,
+    "cell_prior_strength": 40.0,
+    "training_cells": 1248
+  },
+  "evaluation": {
+    "training_recoverable_share_among_faults": 0.7629558170943469,
+    "training_mean_rss_per_fault_kwh": 8.379960891745215,
+    "training_mean_loss_by_cause_kwh": {
+      "full_charge": 3.8238617849020495,
+      "user_stop": 6.334737473340412,
+      "nonsystem_pile_fault": 12.205517738549716,
+      "system_issue": 16.211438747553572,
+      "ev_fault": 17.151089091868407,
+      "other_pile_fault": 15.62828883580263
+    }
+  },
+  "heterogeneity": {
+    "eligible_station_cells": 717,
+    "recoverable_share_q10": 0.5106682080924856,
+    "recoverable_share_q90": 1.0,
+    "recoverable_share_q90_q10_range": 0.4893317919075144
+  },
+  "gate_details": {
+    "brier_relative_improvement": 0.003319352302875804,
+    "rss_mae_relative_improvement": 0.01293920809739819,
+    "top_decile_capture_relative_gain": 0.24596466636446118,
+    "positive_test_months": 5,
+    "test_months": 6,
+    "all_gates_passed": false
+  }
+}
